@@ -177,6 +177,10 @@ section {
             animation: shadowPulse4 2s linear infinite;
   }
 
+.limage {
+
+}
+
 @media only screen and (max-width: 1440px) {
    
     section {
@@ -215,6 +219,11 @@ section {
 @media only screen and (max-width: 480px) {
     body {
       overflow: unset;
+    }
+
+    .limage {
+        width: 50px;
+        max-height: 100px;
     }
 
     .content {
