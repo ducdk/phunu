@@ -1,0 +1,396 @@
+body {
+    overflow: hidden;
+}
+
+.loading {
+    width: 100vw;
+    height: 100vh;
+}
+
+.loading-content {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #b1d1a8;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    color: #b1d1a8;
+    text-align: center;
+}
+
+.content-p {
+    font-size: 24px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    display: none;
+}
+
+.content-link {
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    color: #e12028;
+    width: 150px;
+}
+
+section {
+    min-width: 30%;
+    max-width: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.center {
+    width: 300px;
+    height: 300px;
+    /* border: 3px solid #fff; */
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* -webkit-animation: rotation 10s linear infinite;
+    animation: rotation 10s linear infinite; */
+    margin-left: 40px;
+}
+
+.loader-8:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ff3d00;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+}
+
+.circle {
+    position: absolute;
+    /* background: #ff3d00; */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+.circle-1 {
+    transform: translate(30%, -80%);
+    animation: fadeIn 5s;
+
+    background-image: url('./images/nhanvat/diem.png');
+    background-size: cover;
+}
+
+.circle-1:hover {
+    background-image: url('./images/nhanvat/diemactive.png');
+}
+
+.circle-2 {
+    transform: translate(125%, -10%);
+    animation: fadeIn 8s;
+    background-image: url('./images/nhanvat/nhu.png');
+    background-size: cover;
+}
+
+.circle-2:hover {
+    background-image: url('./images/nhanvat/nhuactive.png');
+}
+
+.circle-3 {
+    transform: translate(95%, 104%);
+    animation: fadeIn 12s;
+    background-image: url('./images/nhanvat/khanh.png');
+    background-size: cover;
+}
+
+.circle-3:hover {
+    background-image: url('./images/nhanvat/khanhactive.png');
+}
+
+.circle-4 {
+    transform: translate(-24%, 107%);
+    animation: fadeIn 15s;
+    background-image: url('./images/nhanvat/lan.png');
+    background-size: cover;
+}
+
+.circle-4:hover {
+    background-image: url('./images/nhanvat/lanactive.png');
+}
+
+.circle-5 {
+    transform: translate(-65%, -5%);
+    animation: fadeIn 15s;
+    background-image: url('./images/nhanvat/huong.png');
+    background-size: cover;
+}
+
+.circle-5:hover {
+    background-image: url('./images/nhanvat/huongactive.png');
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background-image: url('./images/background.png');
+    background-size: contain;
+}
+
+.bufterfly {
+    position: absolute;
+    bottom: 0;
+}
+
+.animation {
+    -webkit-animation: shadowPulse 2s linear infinite;
+            animation: shadowPulse 2s linear infinite;
+  }
+.animation1 {
+    -webkit-animation: shadowPulse1 2s linear infinite;
+            animation: shadowPulse1 2s linear infinite;
+  }
+.animation2 {
+    -webkit-animation: shadowPulse2 2s linear infinite;
+            animation: shadowPulse2 2s linear infinite;
+  }
+.animation3 {
+    -webkit-animation: shadowPulse3 2s linear infinite;
+            animation: shadowPulse3 2s linear infinite;
+  }
+.animation4 {
+    -webkit-animation: shadowPulse4 2s linear infinite;
+            animation: shadowPulse4 2s linear infinite;
+  }
+
+@media only screen and (max-width: 1440px) {
+   
+    section {
+        min-width: 43%;
+    }
+    .circle {
+        position: absolute;
+        /* background: #ff3d00; */
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        z-index: 9;
+    }
+}
+
+  
+@media only screen and (max-width: 1024px) {
+    body {
+      overflow: unset;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .content-text {
+        margin-top: 200px;
+    }
+
+    .center {
+        margin-top: 100px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+      overflow: unset;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        background-size: cover;
+    }
+
+    .content-text {
+        margin-top: 200px;
+        margin-bottom: 50px;
+    }
+
+    .center {
+        margin-top: 100px;
+        margin-left: 0;
+        width: 150px;
+        height: 100px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .content-p {
+        font-size: 18px;
+        padding: 0 16px;
+    }
+
+    .circle {
+        position: absolute;
+        /* background: #ff3d00; */
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        z-index: 9;
+    }
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes shadowPulse {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.75;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.25;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes shadowPulse1 {
+    0% {
+        opacity: 0.75;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0.25;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes shadowPulse2 {
+    0% {
+        opacity: 0.5;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.75;
+    }
+}
+
+
+@keyframes shadowPulse3 {
+    0% {
+        opacity: 0.25;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes shadowPulse4 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.75;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.25;
+    }
+}
